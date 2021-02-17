@@ -1,0 +1,24 @@
+@keyframes listMobileSlideIn{
+    0%{
+        opacity: 0;
+        height: 0;
+
+    }
+
+    100%{
+        opacity: 1;
+        height: 30rem;
+    }
+}
+
+@keyframes filterSlideDown{
+    0%{
+        opacity: 0;
+        height: 0;
+    }
+
+    100%{
+        opacity: 1;
+        height: 30rem;
+    }
+}

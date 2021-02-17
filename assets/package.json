@@ -1,0 +1,20 @@
+{
+  "name": "grailed-shop-layout",
+  "version": "1.0.0",
+  "description": "clone grailed.com/shop",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "keywords": [
+    "grailed",
+    "shop",
+    "ecommerce",
+    "web"
+  ],
+  "author": "ntrungduc228",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Grailed, Ecommerce Web, Shop">
+    <meta name="description" content="Grailed Shop clone layout">
+    <meta name="author" content="Duc Nguyen | ntrungduc228">
+    <title>Shop Men&#39;s Designer Clothing at Grailed | Men&#39;s Designer &amp; Streetwear</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.grailed.com/images/favicon_grailed.ico" sizes="48x48" />
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" integrity="sha512-Ojqt7YpXqYM6//AdMhErV3ot38rYgGF5QLJEwx7zhesjL9VqfhWiRz/dWK22hsn96RNz0CLl85+pg1P0BmfgVQ==" crossorigin="anonymous" />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <!-- Libs -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <!-- Header -->
+ <header class="header fixed-top border-bottom">
+    <div class="container header-content">
+            <div class="logo">
+                <a href="index.html" class="logo__link">
+                    <svg class="logo__img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130 17" fill="none">
+                        <path d="M8.56067 16.1234C11.1971 16.1234 13.6781 15.3158 15.563 13.8476V7.09089H8.34615V9.55167H12.5083V12.3482L12.4454 12.3894C11.3293 13.1169 9.98305 13.5025 8.5599 13.5025C5.51073 13.5025 3.12223 11.1116 3.12223 8.06168C3.12223 5.15008 5.56203 2.78024 8.5599 2.78024C10.2963 2.78024 11.8733 3.30411 13.0128 4.25391L14.9233 2.17553C13.2747 0.751605 11.0782 1.25259e-07 8.5599 1.25259e-07C3.84041 -0.000777129 0 3.61579 0 8.06012C0 12.5068 3.84041 16.1234 8.56067 16.1234Z" fill="black"/>
+                        <path d="M37.8048 15.936H37.7909H35.1855C34.7059 15.936 34.0126 15.8373 33.5502 15.3834C32.1643 14.0232 30.6456 12.3047 28.1957 9.54468L25.9898 9.5509V15.9392H22.9811V0.157013H29.1019C32.9206 0.157013 34.88 2.03952 34.88 5.07392C34.88 7.94043 31.9871 9.05268 31.6234 9.18482L37.1799 15.3104L37.8048 15.936ZM25.9906 7.30464H28.6612C31.22 7.30464 31.8899 6.25379 31.8899 4.73115C31.8899 3.01731 30.5204 2.48022 28.6612 2.48022H25.9906V7.30464Z" fill="black"/>
+                        <path d="M53.8676 12.6832L55.3249 15.9392H58.4596L50.9164 0.157013H49.473L41.95 15.9392H45.0862L46.5202 12.6832H53.8676ZM50.1811 4.48088L52.8292 10.2481H47.5594L50.1811 4.48088Z" fill="black"/>
+                        <path d="M67.9475 0.157013H64.9395V15.9392H67.9475V0.157013Z" fill="black"/>
+                        <path d="M77.05 0.157013V15.9392H88.303V13.4784H80.0377V0.157013H77.05Z" fill="black"/>
+                        <path d="M105.619 9.28275V6.8173H98.3568V2.71107H107.032V0.157013H95.46V15.9392H107.51V13.389H98.3568V9.28275H105.619Z" fill="black"/>
+                        <path d="M121.175 0.157013H114.811V15.9392H121.709C125.827 15.9392 129.305 12.3319 129.305 8.06013C129.305 3.70362 125.657 0.157013 121.175 0.157013ZM121.43 13.2312H117.78V2.87196H121.175C123.994 2.87196 126.293 5.20061 126.293 8.06091C126.292 10.8629 124.067 13.2312 121.43 13.2312Z" fill="black"/>
+                      </svg>
+                </a>
+            </div>
+            <div class="search">
+                <form action="#" method="get">
+                    <div class="search-content">
+                        <label class="search__label" for="">
+                            <button class="search__label-btn" >
+                                <i class="search__label--search fas fa-search"></i>
+                            </button>
+                        </label>
+                        
+                       <div class="search-frame">
+                            <input class="search__input" type="text" placeholder="Search" value>
+                            <button class="btn btn-search"><span>Search</span></button>
+                            <div class="search-history">
+                                <ul class="search-history__list">
+                                    <li class="search-history__item"><a href="">Vintage</a></li>
+                                    <li class="search-history__item"><a href="">Supreme</a></li>
+                                    <li class="search-history__item"><a href="">Jordan 1</a></li>
+                                    <li class="search-history__item"><a href="">Chrome Hearts</a></li>
+                                    <li class="search-history__item"><a href="">Rick Owens</a></li>
+                                    <li class="search-history__item"><a href="">Balenciaga</a></li>
+                                    <li class="search-history__item"><a href="">Raf Simons</a></li>
+                                    <li class="search-history__item"><a href="">Hoodies</a></li>
+                                </ul>
+                            </div>
+                            <div class="bg-overlay__history"></div>
+                       </div>
+
+                    </div>
+                </form>
+            </div>
+            <nav class="header-nav">
+                <div class="header-nav-mobile">
+                    <a href="#" class="btn btn-header-nav-mobile">Sign Up</a>
+                    <input type="checkbox" hidden class="header-nav-check" name="" id="mobile-header-nav">
+                    <label for="mobile-header-nav" class="header-nav-checkbox bars"><i class="header-nav-icon fas fa-bars"></i></label>
+                    <label for="mobile-header-nav" class="header-nav-checkbox times"><i class="nav-mobile--close fas fa-times"></i></label>
+                    
+                    <div class="nav-mobile">
+
+                        <ul class="nav-mobile__list">
+                            <li><a href="" class="nav-mobile__link border-bottom">Sell</a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom">Shop</a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom">Designers</a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom">Staff Picks</a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom">All Categories</a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom">Sneakers</a></li>
+                            <li>
+                                <input type="checkbox" hidden class="list-mobile-checkbox--tops" name="" id="list-mobile--tops">
+                                <label for="list-mobile--tops" class="list-mobile__label">
+                                     <span class="nav-mobile__link border-bottom --all-categories">Tops <i class="fas fa-chevron-down"></i></span>
+                                </label>
+                                <ul class="list-mobile--tops">
+                                    <li><a href="" class="list-mobile__link">all tops</a></li>
+                                    <li><a href="" class="list-mobile__link">long sleeve t-shirts</a></li>
+                                    <li><a href="" class="list-mobile__link">polos</a></li>
+                                    <li><a href="" class="list-mobile__link">shirts (button ups)</a></li>
+                                    <li><a href="" class="list-mobile__link">short sleeve t-shirts</a></li>
+                                    <li><a href="" class="list-mobile__link">sweaters & knitwear</a></li>
+                                    <li><a href="" class="list-mobile__link">sweat shirt & hoodies</a></li>
+                                    <li><a href="" class="list-mobile__link">tank tops & sleeveless</a></li>
+                                    <li><a href="" class="list-mobile__link">jerseys</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" hidden class="list-mobile-checkbox--bottoms" name="" id="list-mobile--bottoms">
+                                <label for="list-mobile--bottoms" class="list-mobile__label">
+                                    <span class="nav-mobile__link border-bottom --all-categories">Bottoms<i class="fas fa-chevron-down"></i></span>
+                               </label>
+                               <ul class="list-mobile--bottoms">
+                                <li><a href="" class="list-mobile__link">all bottoms</a></li>
+                                <li><a href="" class="list-mobile__link">casual pants</a></li>
+                                <li><a href="" class="list-mobile__link">cropped pants</a></li>
+                                <li><a href="" class="list-mobile__link">denim</a></li>
+                                <li><a href="" class="list-mobile__link">leggings</a></li>
+                                <li><a href="" class="list-mobile__link">overalls & jumpsuits</a></li>
+                                <li><a href="" class="list-mobile__link">shorts</a></li>
+                                <li><a href="" class="list-mobile__link">sweatpants & joggers</a></li>
+                                <li><a href="" class="list-mobile__link">swimwear</a></li>
+                            </ul>
+                            </li>
+                            <li>
+                                <input type="checkbox" hidden class="list-mobile-checkbox--outerwear" name="" id="list-mobile--outerwear">
+                                <label for="list-mobile--outerwear" class="list-mobile__label">
+                                     <span class="nav-mobile__link border-bottom --all-categories">Outerwear <i class="fas fa-chevron-down"></i></span>
+                                </label>
+                                <ul class="list-mobile--outerwear">
+                                    <li><a href="" class="list-mobile__link">all outerwear</a></li>
+                                    <li><a href="" class="list-mobile__link">bombers</a></li>
+                                    <li><a href="" class="list-mobile__link">cloaks & capes</a></li>
+                                    <li><a href="" class="list-mobile__link">denim jackets</a></li>
+                                    <li><a href="" class="list-mobile__link">heavy jackets</a></li>
+                                    <li><a href="" class="list-mobile__link">leather jackets</a></li>
+                                    <li><a href="" class="list-mobile__link">light jackets</a></li>
+                                    <li><a href="" class="list-mobile__link">parkas</a></li>
+                                    <li><a href="" class="list-mobile__link">raincoats</a></li>
+                                    <li><a href="" class="list-mobile__link">vests</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="nav-mobile__link border-bottom  --all-categories">Footwear<i class="fas fa-chevron-down"></i></a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom  --all-categories">Tailoring<i class="fas fa-chevron-down"></i></a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom  --all-categories">Accessories<i class="fas fa-chevron-down"></i></a></li>
+                            <li><a href="" class="nav-mobile__link border-bottom  --all-categories">Collections<i class="fas fa-chevron-down"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="bg-overlay"></div>
+
+                </div>
+                <ul class="header-nav__list">
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">SHOP</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">SELL</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link">READ</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link btn btn-login">Login</a></li>
+                    <li class="header-nav__item"><a href="#" class="header-nav__link btn btn-sign-up">Sign Up</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+    </div>
+   
+ </header>
+
+  <!-- Navigation -->
+<nav class="navbar border-bottom">
+    <div class="container navbar-content">
+        <ul class="navbar__list">
+            <li class="--design">
+                <a href="" class="navbar__link">designers</a>
+                <div class="mega--design"> 
+                    <div class="mega__category">
+                       <a href="#" class="mega__title"> <span>Designer A-Z</span></a>
+                    </div>
+                    <div class="mega__category">
+                        <ul class="mega__list">
+                            <li><a href="" class="mega__link">Acne Studios</a></li>
+                            <li><a href="" class="mega__link">Adidas</a></li>
+                            <li><a href="" class="mega__link">Alexaner McQueen</a></li>
+                            <li><a href="" class="mega__link">Alexaner Wang</a></li>
+                            <li><a href="" class="mega__link">Balenciaga</a></li>
+                            <li><a href="" class="mega__link">Balmain</a></li>
+                            <li><a href="" class="mega__link">Balmain</a></li>
+                            <li><a href="" class="mega__link">Bape</a></li>
+                            <li><a href="" class="mega__link">Burberry</a></li>
+                            <li><a href="" class="mega__link">Common Projects</a></li>
+                            <li><a href="" class="mega__link">Dior</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega__category">
+                        <ul class="mega__list">
+                            <li><a href="" class="mega__link">Dries Van Notes</a></li>
+                            <li><a href="" class="mega__link">Fear of God</a></li>
+                            <li><a href="" class="mega__link">Givenchy</a></li>
+                            <li><a href="" class="mega__link">Gucci</a></li>
+                            <li><a href="" class="mega__link">Julius</a></li>
+                            <li><a href="" class="mega__link">Junya Watanabe</a></li>
+                            <li><a href="" class="mega__link">Lanvin</a></li>
+                            <li><a href="" class="mega__link">Louis Vuitton</a></li>
+                            <li><a href="" class="mega__link">Maison Margiela</a></li>
+                            <li><a href="" class="mega__link">Nike</a></li>
+                            <li><a href="" class="mega__link">Number (N)ine</a></li>
+                        </ul>
+                    </div>
+                    <div class="mega__category">
+                        <ul class="mega__link">
+                            <li><a href="" class="mega__link">Off-White</a></li>
+                            <li><a href="" class="mega__link">Prada</a></li>
+                            <li><a href="" class="mega__link">Raf Simons</a></li>
+                            <li><a href="" class="mega__link">Rick Owens</a></li>
+                            <li><a href="" class="mega__link">Saint Laurent</a></li>
+                            <li><a href="" class="mega__link">Stone Island</a></li>
+                            <li><a href="" class="mega__link">Supreme</a></li>
+                            <li><a href="" class="mega__link">Thom Browne</a></li>
+                            <li><a href="" class="mega__link">Undercover</a></li>
+                            <li><a href="" class="mega__link">Visvim</a></li>
+                        </ul>
+                    </div>
+                </div> 
+            </li>
+            <li class="browse-by-category">
+                <a href="" class="navbar__link navbar--chervon-down">browse by category</a>
+                <div class="dropdown dropdown__category">
+                    <ul class="dropdown__list">
+                        <li><a href="" class="dropdown__link ">all categories</a></li>
+                        <li>
+                            <a href="" class="dropdown__link  --all-categories">tops <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown dropdown__category popover">
+                                <ul class="dropdown__list">
+                                    <li><a href="" class="dropdown__link">long sleeve t-shirts</a></li>
+                                    <li><a href="" class="dropdown__link">polos</a></li>
+                                    <li><a href="" class="dropdown__link">shirts(button ups)</a></li>
+                                    <li><a href="" class="dropdown__link">short sleeve t-shirts</a></li>
+                                    <li><a href="" class="dropdown__link">sweater & knitwear</a></li>
+                                    <li><a href="" class="dropdown__link">sweatshirt & hoodies</a></li>
+                                    <li><a href="" class="dropdown__link">tank tops & sleeveless</a></li>
+                                    <li><a href="" class="dropdown__link">jerseys</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown__link --all-categories">bottoms <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown dropdown__category popover">
+                                <ul class="dropdown__list">
+                                    <li><a href="" class="dropdown__link">casual pants</a></li>
+                                    <li><a href="" class="dropdown__link">cropped pants</a></li>
+                                    <li><a href="" class="dropdown__link">denim</a></li>
+                                    <li><a href="" class="dropdown__link">leggings</a></li>
+                                    <li><a href="" class="dropdown__link">overrall & jumpsuits</a></li>
+                                    <li><a href="" class="dropdown__link">shorts</a></li>
+                                    <li><a href="" class="dropdown__link">swearpants & joggers</a></li>
+                                    <li><a href="" class="dropdown__link">swimwear</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown__link --all-categories">outerwears <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown dropdown__category popover">
+                                <ul class="dropdown__list">
+                                    <li><a href="" class="dropdown__link">bombers</a></li>
+                                    <li><a href="" class="dropdown__link">cloaks & capes</a></li>
+                                    <li><a href="" class="dropdown__link">denim jackets</a></li>
+                                    <li><a href="" class="dropdown__link">heavy coats</a></li>
+                                    <li><a href="" class="dropdown__link">leather jackets</a></li>
+                                    <li><a href="" class="dropdown__link">light jackets</a></li>
+                                    <li><a href="" class="dropdown__link">parkas</a></li>
+                                    <li><a href="" class="dropdown__link">raincoats</a></li>
+                                    <li><a href="" class="dropdown__link">vest</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown__link --all-categories">footwear <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown dropdown__category popover">
+                                <ul class="dropdown__list">
+                                    <li><a href="" class="dropdown__link">boots</a></li>
+                                    <li><a href="" class="dropdown__link">casual leather shoes</a></li>
+                                    <li><a href="" class="dropdown__link">formal shoes</a></li>
+                                    <li><a href="" class="dropdown__link">hi-top sneakers</a></li>
+                                    <li><a href="" class="dropdown__link">low-top sneakers</a></li>
+                                    <li><a href="" class="dropdown__link">sandals</a></li>
+                                    <li><a href="" class="dropdown__link">slip ons</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown__link --all-categories">tailoring <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown dropdown__category popover">
+                                <ul class="dropdown__list">
+                                    <li><a href="" class="dropdown__link">blazers</a></li>
+                                    <li><a href="" class="dropdown__link">formal shirting</a></li>
+                                    <li><a href="" class="dropdown__link">formal trousers</a></li>
+                                    <li><a href="" class="dropdown__link">suits</a></li>
+                                    <li><a href="" class="dropdown__link">tuxedos</a></li>
+                                    <li><a href="" class="dropdown__link">vests</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="dropdown__link --all-categories">accessories <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown dropdown__category popover">
+                                <ul class="dropdown__list">
+                                    <li><a href="" class="dropdown__link">bag & luggage</a></li>
+                                    <li><a href="" class="dropdown__link">belts</a></li>
+                                    <li><a href="" class="dropdown__link">glasses</a></li>
+                                    <li><a href="" class="dropdown__link">gloves & scarves</a></li>
+                                    <li><a href="" class="dropdown__link">hats</a></li>
+                                    <li><a href="" class="dropdown__link">jewelry & watches</a></li>
+                                    <li><a href="" class="dropdown__link">wallets</a></li>
+                                    <li><a href="" class="dropdown__link">miscellaneous</a></li>
+                                    <li><a href="" class="dropdown__link">periodicals</a></li>
+                                    <li><a href="" class="dropdown__link">socks & underwear</a></li>
+                                    <li><a href="" class="dropdown__link">sunglasses</a></li>
+                                    <li><a href="" class="dropdown__link">supreme</a></li>
+                                    <li><a href="" class="dropdown__link">ties & pocket squares</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="" class="navbar__link">sneakers</a></li>
+            <li class="--footwear">
+                <a href="" class="navbar__link">footwear</a>
+                <div class="dropdown dropdown__category">
+                    <ul class="dropdown__list">
+                        <li><a href="" class="dropdown__link">boots</a></li>
+                        <li><a href="" class="dropdown__link">casual leather shoes</a></li>
+                        <li><a href="" class="dropdown__link">formal shoes</a></li>
+                        <li><a href="" class="dropdown__link">hi-top sneakers</a></li>
+                        <li><a href="" class="dropdown__link">low-top sneakers</a></li>
+                        <li><a href="" class="dropdown__link">sandals</a></li>
+                        <li><a href="" class="dropdown__link">slip ons</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="--tops">
+                <a href="" class="navbar__link">tops</a>
+                <div class="dropdown dropdown__category">
+                    <ul class="dropdown__list">
+                        <li><a href="" class="dropdown__link">long sleeve t-shirts</a></li>
+                        <li><a href="" class="dropdown__link">polos</a></li>
+                        <li><a href="" class="dropdown__link">shirts(button ups)</a></li>
+                        <li><a href="" class="dropdown__link">short sleeve t-shirts</a></li>
+                        <li><a href="" class="dropdown__link">sweater & knitwear</a></li>
+                        <li><a href="" class="dropdown__link">sweatshirt & hoodies</a></li>
+                        <li><a href="" class="dropdown__link">tank tops & sleeveless</a></li>
+                        <li><a href="" class="dropdown__link">jerseys</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="--outerwear">
+                <a href="" class="navbar__link">outerwear</a>
+                <div class="dropdown dropdown__category">
+                    <ul class="dropdown__list">
+                        <li><a href="" class="dropdown__link">bommbers</a></li>
+                        <li><a href="" class="dropdown__link">cloaks & capes</a></li>
+                        <li><a href="" class="dropdown__link">denim jackets</a></li>
+                        <li><a href="" class="dropdown__link">heavy coats</a></li>
+                        <li><a href="" class="dropdown__link">leather jackets</a></li>
+                        <li><a href="" class="dropdown__link">light jackets</a></li>
+                        <li><a href="" class="dropdown__link">parkas</a></li>
+                        <li><a href="" class="dropdown__link">raincoats</a></li>
+                        <li><a href="" class="dropdown__link">vests</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="" class="navbar__link">staff picks</a></li>
+            <li><a href="" class="navbar__link">collections</a></li>
+            <li><a href="" class="navbar__link">womenswear</a></li>
+        </ul>
+    </div>
+ </nav>
+
+    <!-- Filter  -->
+    <!-- Mobile -->
+    <section class="filter-mobile">
+        <div class="container filter-mobile__content border-bottom">
+            <div class="filter__listing">
+                <span>2.677.418 listings</span>
+            </div>
+            <div class="filter__btn">
+                <button class="btn btn--save">+ Save</button>
+                 <button class="btn btn--filter">Filter</button>
+            </div>
+        </div>
+    </section>
+    <!-- Desktop -->
+    <section class="filter">
+        <div class="container filter__content border-bottom">
+            <div class="filter__listing">
+                <span>2.677.418 listings</span>
+            </div>
+            <div class="filter__btn">
+                <button class="btn btn--save">+ Save</button>
+                <div class="filter__sort">
+                    <input type="checkbox" class="dropdown-filter-input"  hidden name="" id="dropdown-filter-list">
+                    <label for="dropdown-filter-list"> <span>Sort By: Trending</span> </label>
+                    <div class="dropdown-filter">
+                        <ul id="dropdown-sort" class="dropdown-filter__list">
+                            <li><a href="" class="dropdown-filter__link">Sort By: Default</a></li>
+                            <li><a href="" class="dropdown-filter__link">Sort By: Trending</a></li>
+                            <li><a href="" class="dropdown-filter__link">Sort By: Low Price</a></li>
+                            <li><a href="" class="dropdown-filter__link">Sort By: High Price</a></li>
+                            <li><a href="" class="dropdown-filter__link">Sort By: New</a></li>
+                            <li><a href="" class="dropdown-filter__link">Sort By: Popular</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Main -->
+    <main class="main">
+        <div class="container product-layout">
+            <div class="col-1-of-4">
+                <div class="filter-sidebar">
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden checked class="filter-sidebar--sizes" name="" id="filter-sidebar--sizes">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--sizes" class="filter__top-label">
+                                <span class="filter__top-header">Size </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--sizes">
+                                <li class="border-bottom filter__item--sizes">
+                                    <p class="filter__message">Sign up or log in to add your sizes and we’ll customize your feed to better fit your needs.</p>
+                                    <span class=" btn btn-filter--size">Add My Sizes</span>
+                                </li>
+                                <li style="padding-top: 1.5rem;"><span class="filter__link">Tops<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Bottoms<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Outerwear<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Footwear<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Tailoring<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Accessories<i class="fas fa-chevron-down"></i></span></li>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--category" name="" id="filter-sidebar--category">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--category" class="filter__top-label">
+                                <span class="filter__top-header">Category </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--category">
+                                <li><span class="filter__link">Tops<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Bottoms<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Outerwear<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Footwear<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Tailoring<i class="fas fa-chevron-down"></i></span></li>
+                                <li><span class="filter__link">Accessories<i class="fas fa-chevron-down"></i></span></li>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--designer" name="" id="filter-sidebar--designer">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--designer" class="filter__top-label">
+                                <span class="filter__top-header">Designer</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--designer">
+                            <form action="#">
+                                <li class="filter__item--designer">
+                                        <div class="filter__form">
+                                             <i class="fas fa-search"></i>
+                                             <input type="text" placeholder="Search Designers">
+                                        </div>
+                                </li>
+                                <li class="filter--designer" style="padding-top: 1.5rem;">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Vintage</span>
+                                    <span class="filter__cost">861k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Japanese Brand</span>
+                                    <span class="filter__cost">209k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Streetwear</span>
+                                    <span class="filter__cost">202k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Nike</span>
+                                    <span class="filter__cost">158k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Band Tees</span>
+                                    <span class="filter__cost">84k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Supreme</span>
+                                    <span class="filter__cost">71k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Adidas</span>
+                                    <span class="filter__cost">68k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >American Vintage</span>
+                                    <span class="filter__cost">55k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Polo Ralph Lauren</span>
+                                    <span class="filter__cost">51k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Designer</span>
+                                    <span class="filter__cost">51k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Made In USA</span>
+                                    <span class="filter__cost">42k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Burberry</span>
+                                    <span class="filter__cost">41k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Street Fashion</span>
+                                    <span class="filter__cost">32k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Bape</span>
+                                    <span class="filter__cost">32k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Jordan Brand</span>
+                                    <span class="filter__cost">32k</span>
+                                </li>
+                            </form>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom">
+                        <input type="checkbox" hidden class="filter-sidebar--price" name="" id="filter-sidebar--price">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--price" class="filter__top-label">
+                                <span class="filter__top-header">Price </span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                        <div class="filter__price">
+                            <span class="filter__price-span"><span>$</span> <span>Min</span></span>
+                            <span class="filter__price-span">$Max</span>
+                        </div>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--condition" name="" id="filter-sidebar--condition">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--condition" class="filter__top-label">
+                                <span class="filter__top-header">Condition</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--condition">
+                            <form action="#">
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >New/Never Worn</span>
+                                    <span class="filter__cost">64357</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Genty Used</span>
+                                    <span class="filter__cost">970911</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Very Worn</span>
+                                    <span class="filter__cost">31185</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Burberry</span>
+                                    <span class="filter__cost">41k</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Not Specified</span>
+                                    <span class="filter__cost">136162</span>
+                                </li>
+                            </form>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--keyword" name="" id="filter-sidebar--keyword">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--keyword" class="filter__top-label">
+                                <span class="filter__top-header">Filter By Keyword</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--keyword">
+                            <form action="#">
+                                <li class="filter__item--designer">
+                                        <div class="filter__form">
+                                             <i class="fas fa-search"></i>
+                                             <input type="text" placeholder="Filter By Keyword">
+                                        </div>
+                                </li>
+                            </form>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--location" name="" id="filter-sidebar--location">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--location" class="filter__top-label">
+                                <span class="filter__top-header">Location</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--location">
+                            <form action="#">
+                                
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >United States</span>
+                                    <span class="filter__cost">1308952</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Asia</span>
+                                    <span class="filter__cost">682837</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Europe</span>
+                                    <span class="filter__cost">311734</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Other</span>
+                                    <span class="filter__cost">156254</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Canada</span>
+                                    <span class="filter__cost">143308</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >United Kingdom</span>
+                                    <span class="filter__cost">27670</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Australia/NZ</span>
+                                    <span class="filter__cost">15021</span>
+                                </li>
+                            </form>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--show-only" name="" id="filter-sidebar--show-only">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--show-only" class="filter__top-label">
+                                <span class="filter__top-header">Show Only</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--show-only">
+                            <form action="#">
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Staff Pick</span>
+                                    <span class="filter__cost">723</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Listed By Grailed</span>
+                                    <span class="filter__cost">2</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Sold</span>
+                                    <span class="filter__cost">0</span>
+                                </li>
+                            </form>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom ">
+                        <input type="checkbox" hidden class="filter-sidebar--market" name="" id="filter-sidebar--market">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--market" class="filter__top-label">
+                                <span class="filter__top-header">Market</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </label>
+                        </div>
+                            <ul class="filter__list filter__list--market">
+                            <form action="#">
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Core</span>
+                                    <span class="filter__cost">1806882</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Grails</span>
+                                    <span class="filter__cost">501579</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Hype</span>
+                                    <span class="filter__cost">326239</span>
+                                </li>
+                                <li class="filter--designer">
+                                    <input type="checkbox" class="filter__input--checkbox" name="" id="">
+                                    <span class="filter__link" >Sartorial</span>
+                                    <span class="filter__cost">11177</span>
+                                </li>
+                            </form>
+                            </ul>
+                    </div>
+                    <div class="filter-sidebar__item border-bottom">
+                        <input type="checkbox" hidden class="filter-sidebar--save-searches" name="" id="filter-sidebar--save-searches">
+                        <div class="filter__top">
+                            <label for="filter-sidebar--save-searches" class="filter__top-label">
+                                <span class="filter__top-header">Save Searches </span>
+                                <i class="fas fa-chevron-right"></i>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="filter-sidebar__item">
+                        <button class="btn btn-filter--search">Save This Search</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3-of-4">
+                <div class="product-carousel border-bottom">
+                    <h2 class="title-text">Curated Products</h2>
+                    <div class="container product-carousel__content">
+                        <button class="arrow arrow--left"><i class="fas fa-chevron-left"></i></button>
+                        <div class="product-carousel__inner">
+                            <div >
+                                <a href="#" class="product-carousel__item">
+                                    <div class="product-carousel__price"><span>$350+</span></div>
+                                    <div class="product-carousel__photo">
+                                        <img src="./assets/img/products/fear-of-god-core-sweatpants.jpg" alt="">
+                                    </div>
+                                    <div class="product-carousel__info">
+                                        <span class="product-carousel__brand">Fear of God</span>
+                                        <span class="product-carousel__name">Core Sweatpants</span>
+                                        <span class="product-carousel__filter">8 Listings | 7 Colors</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="product-carousel__item">
+                                    <div class="product-carousel__price">$320+</div>
+                                    <div class="product-carousel__photo">
+                                        <img src="./assets/img/products/adidas-yeezy-700-v3-alvah.jpg" alt="">
+                                    </div>
+                                    <div class="product-carousel__info">
+                                        <span class="product-carousel__brand">Adidas</span>
+                                        <span class="product-carousel__name">Yeezy 700 V3 Alvah</span>
+                                        <span class="product-carousel__filter">30 Listings</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="product-carousel__item">
+                                    <div class="product-carousel__price">$250+</div>
+                                    <div class="product-carousel__photo">
+                                        <img src="./assets/img/products/nike-supreme-plaid-hoodie.jpg" alt="">
+                                    </div>
+                                    <div class="product-carousel__info">
+                                        <span class="product-carousel__brand">Nike x Supreme</span>
+                                        <span class="product-carousel__name">Plaid Hoodie</span>
+                                        <span class="product-carousel__filter">3 Listings | 3 Colors</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#" class="product-carousel__item">
+                                    <div class="product-carousel__price">$240+</div>
+                                    <div class="product-carousel__photo">
+                                        <img src="./assets/img/products/rhude-logo-shorts.jpg" alt="">
+                                    </div>
+                                    <div class="product-carousel__info">
+                                        <span class="product-carousel__brand">Rhude</span>
+                                        <span class="product-carousel__name">Logo Shorts</span>
+                                        <span class="product-carousel__filter">10 Listings | 4 Colors</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="arrow arrow--right"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>  
+
+                <div class="product-home">
+                    <h2 class="title-text">Available Listings</h2>
+                    <div class="product-home__content">
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                 <div class="product-home__img" style="background-image: url(../assets/img/products/fuck-the-population.jpg);">
+                                    <img src="./assets/img/products/fuck-the-population.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 14 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Fuck The Population </p>
+                                    <p class="product-home__size">OS</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p >FTP Bullet Hole 5 Panel Washed Indigo gfgffffff</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$60</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img"  style="background-image: url(../assets/img/products/nba-vintage.jpg);">
+                                    <img src="./assets/img/products/nba-vintage.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">1 day ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × NBA</p>
+                                    <p class="product-home__size">32</p>
+                                </div>
+                                <div>
+                                    <p class="product-home__description">Minnesota timberwolves 2003-2004 blue Retro shorts</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$49</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/all-sport-band-tee.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 14 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Movie × Band Tees × All Sport</p>
+                                    <p class="product-home__size">XL</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>WWF Stone Cold Steve Austin T Shirt</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$60</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/carhartt-vintage.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 14 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Carhartt  </p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p> Carhartt pocket teet</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$20</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/junya-watanabe.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 12 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Comme Des Garcons × Junya</p>
+                                    <p class="product-home__size">M</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>AD2005 Sierra Nevada Print Sweatshir</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$175</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/gucci-vintage.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 16 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Gucci × Vintage</p>
+                                    <p class="product-home__size">OS</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>
+                                        <i class="fas fa-fire" style="color: red;"></i> 70’s Rare Gucci frame</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$85</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/bandtees-custom.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 19 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Band Tees × Custom Tee</p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>American PSYCHO Movie T Shirt</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$38</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/bape-nigo.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 22 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Bape × Nigo</p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Shibuya Store Exclusive Sta Zip Hoodie - Star</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$329</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 23 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage </p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Let’s Summon Demons Hoodie</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$60</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage-patagonia.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">1 day ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Patagonia</p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Patagonia Vintage 2013 Bear Block Retro Deep Pile Jacket
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$1.000</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/supreme-comme.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 24 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Supreme × Comme Des Garcons</p>
+                                    <p class="product-home__size">OS</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Eye Wallet</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <div>
+                                    <span class="product-home__price--new">$108</span>
+                                    <span class="product-home__price--old">$120</span>
+                                </div>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/bape.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">1 day ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Bape</p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>2006 Baby Milo Camo Full Zip Hoodie</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$315</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/nike.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 7 hour ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Nike</p>
+                                    <p class="product-home__size">10</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Blazer Mid 77 Vintage White Black 2019</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$55</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage-carhartt.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 23 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Carhartt</p>
+                                    <p class="product-home__size">L</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>vintage 90s carhartt vest</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$30</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/nike-jordan-brand.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">2 days ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Nike × Jordan Brand</p>
+                                    <p class="product-home__size">9</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Air Jordan 1 Retro High OG UNC 2015 </p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$550</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/fear-of-god.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">1 day ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Bape</p>
+                                    <p class="product-home__size">M</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Fear of God Essentials 3D Silicon Applique Boxy Tee</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$75</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage-carhartt-streetwear.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 2 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Carhartt × Streetwear</p>
+                                    <p class="product-home__size">31</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>31x30 Vintage Carhartt Double Knee Pants (Green)</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$149</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage-pastelle-american.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">2 days ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Pastelle × American Vintage</p>
+                                    <p class="product-home__size">M</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Light Baby Blue Varsity Letterman Jacket Chenille P West</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$395</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage-levi.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 22 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Levi's</p>
+                                    <p class="product-home__size">34</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>vintage 80s distressed 505 levis</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$28</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-home__item">
+                            <a href="" class="product-home__link">
+                                <div class="product-home__img">
+                                    <img src="./assets/img/products/vintage-starter-mlb.jpg" alt="">
+                                </div>
+                                <p class="product-home__age border-bottom">about 23 hours ago</p>
+                                <div class="product-home__info">
+                                    <p class="product-home__name">Vintage × Starter × MLB</p>
+                                    <p class="product-home__size">XL</p>
+                                </div>
+                                <div class="product-home__description">
+                                    <p>Vintage Oakland A's Satin Starter Jacket</p>
+                                </div>
+                            </a>
+                            <div class="product-home__price">
+                                <span>$75</span>
+                                <button><i class="far fa-heart"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+        <nav class="footer-nav">
+            <ul class="footer-nav__list">
+                <li><a href="" class="footer-nav__link">about</a></li>
+                <li><a href="" class="footer-nav__link">help & faq</a></li>
+                <li><a href="" class="footer-nav__link">terms</a></li>
+                <li><a href="" class="footer-nav__link">trust</a></li>
+                <li><a href="" class="footer-nav__link">accessibility</a></li>
+                <li><a href="" class="footer-nav__link">jobs</a></li>
+                <li><a href="" class="footer-nav__link">ios app</a></li>
+                <li><a href="" class="footer-nav__link">android app</a></li>
+            </ul>
+            <ul class="footer-nav__list">
+                <li><a href="" class="footer-nav__link"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="" class="footer-nav__link"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="" class="footer-nav__link"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="" class="footer-nav__link"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="" class="footer-nav__link"><i class="fab fa-linkedin"></i></a></li>
+                <li><span>Grailed &#169; 2021</span></li>
+            </ul>
+        </nav>
+    </footer>
+    <!-- <div class="modal">
+        <div class="bg-overlay__modal"></div>
+        <div class="modal-form">
+            <div class="modal-header">
+                <h2 class="modal__title">Create An Account</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal__message">By creating an account on Grailed you'll be able to buy, sell, comment, and more.</p>
+                <button class="btn btn-large">Sign up with Facebook</button>
+                <button class="btn btn-large">Sign up with Google</button>
+                <button class="btn btn-large">Sign up with Apple</button>
+                <button class="btn btn-large">Sign up with Email</button>
+                <p>Already have an account? Log in</p>
+                <p class="modal__message">By creating an account, I accept Grailed's Terms of Services and Privacy Policy</p>
+            </div>
+        </div>
+    </div> -->
+</body>
+</html>

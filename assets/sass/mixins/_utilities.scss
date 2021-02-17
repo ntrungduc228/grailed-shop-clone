@@ -1,0 +1,94 @@
+
+@mixin respond ($breakpoint){
+    // medium device
+    @if $breakpoint == m-device { 
+     /* > PC low resolution */
+    @media (min-width: 1024px) and (max-width: 1239px){
+            @content;
+        }
+    }
+
+    // small device
+    @if $breakpoint == s-device { 
+        /* Mobile & Tablet */
+      @media (max-width: 1024px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == tablet {
+        /* Tablet */
+         @media (min-width: 771px) and (max-width: 1023px){
+             @content;
+         }
+     }
+
+     @if $breakpoint == mobile {
+        /* Mobile */
+        @media (max-width: 770px){
+            @content;
+        }
+    }
+
+    @if $breakpoint == s-mobile {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
+}
+
+
+.border-bottom{
+    border-bottom: $border-width solid $border-color !important;
+}
+
+
+.bg-black{
+    background-color: $black;
+}
+
+.bg-overlay__history{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.3);
+    top: $header-height;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        display: none;
+}
+
+.bg-overlay{
+    position: fixed;
+    top: 0%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: $zindex-fixed;
+    display: none;
+}
+
+.bg-overlay__modal{
+    position: fixed;
+    top: -10%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: $zindex-fixed;
+    //display: none;
+}
+
+.hide{
+    @include respond(s-device){
+        display: none;
+    }
+}
+
+.title-text{
+    font-size: 2rem;
+    line-height: 3rem;
+    font-weight: 600;
+    margin: 1rem 0.2rem 0.8rem 0;
+}

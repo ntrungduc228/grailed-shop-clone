@@ -1,0 +1,36 @@
+// Colors
+$white: #fff !default;
+$black:    #000 !default;
+$blue: blue !default;
+$gray-banner: #343434;
+$gray-light: #e1e1e1;
+$primary-color: $white;
+$primary-text-color: $black;
+$white-100: #fafafa;
+
+
+// Mixins/Position
+$zindex-fixed-header:999;
+$zindex-fixed: 1030;
+$zindex-fixed-modal: 1050;
+$zindex-dropdown: 1032;
+$zindex-sticky: calc(#{$zindex-fixed-header - 1});
+
+// Utilities
+$border-width: 1px;
+$border-color: $gray-light;
+
+// Button
+
+
+// Header
+$header-height: 12rem;
+$header-frame-height: 7.6rem;
+$nav-menu-height: calc($header-height - $header-frame-height);
+
+// Filter-Sidebar
+$filter-sidebar-width: 25.6rem;
+
+// Product-Carousel
+$product-carousel-width: 20.4rem;
+

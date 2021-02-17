@@ -1,0 +1,266 @@
+.filter{
+    position: sticky;
+    position: -webkit-sticky;
+    top: 6rem;
+    z-index: $zindex-sticky;
+    background-color: $primary-color;
+    
+    @include respond(s-device){
+        display: none;
+    }
+
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.1rem 0.8rem 0.6rem;
+       
+    }
+
+    &__listing{
+        display: flex;
+        padding: 1.7rem 0 1.3rem;
+
+        span{
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.6rem;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+    }
+
+    &__sort{
+        min-height: 1.2rem;
+        border: 1px solid $gray-light;
+        border-radius: 0.2rem;
+        padding: 1rem;
+        margin-left: 1.2rem;
+        font-size: 1.4rem;
+        cursor: default;
+        position: relative;
+
+        span{
+            //padding: 0 0.2rem 0.1rem;
+
+            &::after{
+                content: "";
+                display: inline-block;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 4px 4px 0 4px;
+                border-color: #000 transparent transparent transparent;
+                position: relative;
+                top: -0.2rem;
+                right: -5%;
+            }
+        }
+    }
+
+    &-mobile{
+
+        display: none;
+        
+        @include respond(s-device){
+            display: block;
+            padding: 2rem 0;
+        }
+
+        @include respond(mobile){
+            display: block;
+            position: relative;
+            top: $header-frame-height;
+        }
+
+        @include respond(s-mobile){
+            position: relative;
+            top: $header-height;
+        }
+
+        &__content{
+            display: flex;
+            justify-content: space-between;
+            padding: 0rem 1.7rem;
+        }
+    }
+
+    /* Sidebar */
+
+    &-sidebar{
+        padding: 1rem 0;
+    }
+
+    &__top{
+   
+        // padding: 1.2rem 0.8rem;
+        // font-size: 1.4rem;
+        // line-height: 2.5rem;
+        // font-weight: 700;
+        // color: $primary-text-color;
+
+        &-label{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            padding: 1.2rem 0.8rem;
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            font-weight: 700;
+            color: $primary-text-color;
+        }
+    }
+
+    &__list{
+        padding: 0 1.5rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+        display: none;
+        opacity: 0;
+        animation: filterSlideDown 0.2s linear;
+
+        p{
+            cursor: auto;
+        }
+
+        li{
+            font-size: 1.2rem;
+            cursor: pointer;
+            &:nth-child(2){
+               // padding-top: 1.5rem;
+            }
+           
+        }
+
+        
+    }
+
+    &__item--sizes{
+        padding-bottom: 1.5rem;
+    }
+
+    &__link{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+    }
+
+    &-sidebar--sizes:checked ~ &__list--sizes{
+        display: block;
+        opacity: 1;
+    }
+
+    &-sidebar--category:checked ~ &__list--category{
+        display: block;
+        opacity: 1;
+    }
+    
+    &-sidebar--designer:checked ~ &__list--designer{
+        display: block;
+        opacity: 1;
+    }
+
+    &-sidebar--price:checked ~ &__price{
+        display: flex;
+        opacity: 1;
+    }
+
+    &-sidebar--condition:checked ~ &__list--condition{
+        display: block;
+        opacity: 1;
+    }
+
+    &-sidebar--keyword:checked ~ &__list--keyword{
+        display: block;
+        opacity: 1;
+    }
+
+    &-sidebar--location:checked ~ &__list--location{
+        display: block;
+        opacity: 1;
+    }
+
+    &-sidebar--show-only:checked ~ &__list--show-only{
+        display: block;
+        opacity: 1;
+    }
+
+    &-sidebar--market:checked ~ &__list--market{
+        display: block;
+        opacity: 1;
+    }
+
+
+    &__form{
+        
+        border: 1px solid $gray-light;
+        height: 3.6rem;
+        padding: 0.6rem 0.8rem;
+        border-radius: 0.15rem;
+        box-shadow: none;
+        box-sizing: border-box;
+        width: 100%;
+
+        input[type="text"]{
+            border: none;
+            outline: none;
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &__input{
+
+        &--checkbox{
+            width: 1.5rem;
+            height: 1.5rem;
+
+        }
+    }
+
+    &--designer{
+        display: flex;
+        align-items: center;
+
+        input,
+        span{
+            display: inline-block;
+            margin-right: 0.4rem;
+            align-items: center;
+        }
+    }
+
+    &__cost{
+        background-color: #f4f4f8;
+        border-radius: 0.2rem;
+        font-size: 1rem;
+        height: 1.6rem;
+        padding: 0.2rem 0.4rem 0 0.4rem;
+    }
+
+    &__price{
+
+        display: none;
+        justify-content: space-between;
+        padding: 0 1.5rem;
+        margin-bottom: 3rem;
+
+        &-span{
+            display: inline-flex;
+            justify-content: space-between;
+            padding: 0rem 2.8rem;
+            line-height: 3.6rem;
+            font-size: 1.2rem;
+            border-radius: 0.2rem;
+            border: 1px solid $border-color;
+        }
+    }
+}
+

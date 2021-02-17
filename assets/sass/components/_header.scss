@@ -1,0 +1,231 @@
+.header{
+    background-color: $primary-color;
+    padding: 0 1.6rem;
+
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: $header-frame-height;
+        position: relative;
+
+        @include respond(s-mobile){
+            height: $header-height;
+            align-items: unset;
+         }
+
+    }
+
+    &-frame{
+        display: flex;
+        align-items: center;
+        flex: 1;
+    }
+
+    &-nav{
+        display: flex;
+        align-items: center;
+       // height: 100%;
+
+        @include respond (s-device){
+            display: block;
+        }
+       
+
+        &__list{
+            display: flex;
+            align-items: center;
+
+            @include respond(s-device){
+                display: none;
+           }
+        }
+
+        &__item{
+            margin-left: 2.8rem;
+            padding: 1rem 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        &__link{
+            color: $primary-text-color; 
+
+            &:hover{
+                color: $blue;
+            }
+        }
+
+        &-mobile{
+            display: none;
+
+            @include respond (s-device){
+                display: flex;
+                align-items: center;
+            }
+        }
+
+
+
+        &-checkbox{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 4.5rem;
+            height: 5rem;
+            margin-right: 1rem;
+            
+            @include respond(mobile){
+                margin-right: 0;
+            }
+        }
+
+        &-icon{
+            font-size: 1.6rem;
+
+        }
+    }
+}
+
+.logo{
+    height: 5rem;
+    width: 13rem;
+    line-height: 5rem;
+
+    @include respond (mobile){
+        width: 10rem;
+    }
+
+    &__img{
+        margin-top: 2rem;   
+    }
+}
+
+.search{
+   flex: 1;
+   margin-left: 3.2rem;
+   position: relative;
+
+   @include respond (s-mobile){
+        margin-left: 0;
+        position: absolute;
+        top: 4.8rem;
+        left: 0;
+        right: 0;
+   }
+    
+    &-content{
+    
+        flex: 1;
+        max-width: 55rem;   
+        height: 4.3rem;
+        border: 1px solid $primary-text-color;
+        display: flex;
+        align-items: center;
+        border-radius: 0.2rem;
+        overflow: hidden;
+    }
+
+    &-frame{
+        display: flex;
+        flex: 1 1 auto;
+        height: 100%;
+        align-items: center;
+
+        @include respond (mobile){
+            max-width: 40rem;
+            top: 0;
+        }
+    }
+
+    &__label{
+        width: 4.5rem;
+        height: 100%;
+
+        @include respond(mobile){
+            width: 3rem;
+        }
+
+        @include respond(s-mobile){
+            width: 4.5rem;
+        }
+
+        &-btn{
+            width: 100%;
+            height: 100%;
+            background-color: $primary-color;
+            outline: none;
+            border: none;
+            font-size: 1.6rem;
+            font-weight: 100;
+            
+        }
+
+    }
+
+    &__input{
+        flex: 1 1 auto;
+        height: 4rem;
+        min-width: 15rem;
+        font-size: 1.4rem;
+        color: $primary-text-color;
+        border: none;
+        outline: none;
+        padding: 0.1rem 0.2rem 0.1rem 0rem ;
+    }
+
+    &__input:focus ~ &-history{
+        display: block;
+    } 
+
+    
+
+   &-history{
+       display: none;
+       position: absolute;
+       top: calc(100% + 0.42rem);
+       left: -0.4%;
+       width: 55rem;
+       background-color: $white;
+       z-index: 250;
+       box-shadow: 0 0.1rem 0.2rem rgb(0, 0, 0 / 50%);
+       padding-top: 2rem;
+       padding-bottom: 2rem;
+
+        &:hover ~ .bg-overlay__history{
+            display: block;
+        } 
+
+       @include respond (mobile){
+         width: 40rem;
+       }
+
+       @include respond(s-mobile){
+            width: 100%;
+       }
+
+       &__list{
+           margin: 0;
+           padding: 0;
+       }
+
+       &__item{
+           font-size: 1.4rem;
+           font-weight: 400;
+           line-height: 2.5rem;
+           padding: 1rem 0 1rem 2rem;
+           cursor: pointer;
+
+           a{
+            color: $primary-text-color;
+           }
+
+           &:hover{
+               background-color: $gray-light;
+           }
+
+       }
+   }
+   
+}

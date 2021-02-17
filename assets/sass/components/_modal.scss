@@ -1,0 +1,46 @@
+.modal{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: $zindex-fixed-modal;
+    
+
+    &-form{
+        max-width: 40rem;
+        border: 1px solid $gray-light;
+        box-sizing: border-box;
+        box-shadow: 0 0.2rem 0.6rem rgb(0, 0, 0 / 20%);
+        border-radius: 0.8rem;
+        height: auto;
+        max-height: 100%;
+        z-index: calc(#{$zindex-fixed} + 2);
+        background-color: $primary-color;
+    }
+
+    &-header{
+        padding: 0 4rem;
+    }
+
+    &-body{
+        padding: 1.5rem 4rem 2rem 4rem;
+    }
+
+    &__title{
+        font-size: 3.4rem;
+        padding-top: 4.6rem;
+        margin: 0;
+    }
+
+    &__message{
+        text-align: left;
+        line-height: 2.1rem;
+        padding-bottom: 2.4rem; 
+        margin: 0;       
+    }
+}
