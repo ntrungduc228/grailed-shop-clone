@@ -12,11 +12,17 @@
             
             li{
                 padding: 1rem 2rem;
+
+                &:hover{
+                    color: $blue;
+                }
             }
 
             &:last-child{
                 li{
                     padding: 1rem;
+
+                     &:last-child:hover{color:inherit;}
                 }
 
             }

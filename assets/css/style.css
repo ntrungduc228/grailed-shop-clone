@@ -110,6 +110,7 @@ li {
 
 .col-3-of-4 {
   margin: 0rem 0 1rem 0;
+  overflow: hidden;
   /* Mobile & Tablet */ }
   @media (max-width: 1024px) {
     .col-3-of-4 {
@@ -392,7 +393,11 @@ li {
   border: none;
   outline: none;
   width: 3rem;
-  height: 6rem; }
+  height: 6rem;
+  /* Mobile & Tablet */ }
+  @media (max-width: 1024px) {
+    .arrow {
+      display: none; } }
   .arrow i {
     font-size: 1.5rem; }
   .arrow--left {
@@ -536,10 +541,14 @@ li {
   max-width: 32rem;
   background-color: #fff;
   z-index: calc(1030 + 2);
-  overflow: scroll;
+  overflow-y: scroll;
   transform: translateX(-100%);
   opacity: 0;
-  transition: transform linear 0.2s, opacity linear 0.2s; }
+  transition: transform linear 0.2s, opacity linear 0.2s;
+  /* Mobile & Tablet */ }
+  @media (max-width: 1024px) {
+    .nav-mobile {
+      overflow-y: scroll; } }
   .nav-mobile__list {
     padding-left: 0; }
   .nav-mobile__link {
@@ -915,16 +924,17 @@ li {
 .product-carousel {
   position: relative;
   /* Mobile & Tablet */ }
-  @media (max-width: 1024px) {
-    .product-carousel {
-      display: none; } }
   .product-carousel__content {
     margin-bottom: 4rem; }
   .product-carousel__inner {
     display: grid;
+    grid-auto-flow: column;
     grid-template-columns: repeat(4, 1fr);
     gap: 0 2rem;
+    transition: all 0.4s ease;
     /* Mobile & Tablet */ }
+    .product-carousel__inner::-webkit-scrollbar {
+      display: none; }
     @media (max-width: 1024px) {
       .product-carousel__inner {
         display: flex;
@@ -985,7 +995,8 @@ li {
   @media (max-width: 770px) {
     .product-home__content {
       grid-template-columns: repeat(3, 1fr);
-      gap: 2rem 1.2rem; } }
+      gap: 2rem 1.2rem;
+      margin: 0 0.2rem; } }
   @media (max-width: 480px) {
     .product-home__content {
       grid-template-columns: repeat(2, 1fr);
@@ -1088,8 +1099,12 @@ li {
       /* Mobile & Tablet */ }
       .footer-nav__list li {
         padding: 1rem 2rem; }
+        .footer-nav__list li:hover {
+          color: blue; }
       .footer-nav__list:last-child li {
         padding: 1rem; }
+        .footer-nav__list:last-child li:last-child:hover {
+          color: inherit; }
       @media (max-width: 1024px) {
         .footer-nav__list:first-child {
           display: none; }

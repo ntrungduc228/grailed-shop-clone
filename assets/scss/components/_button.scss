@@ -138,6 +138,10 @@
     width: 3rem;
     height: 6rem;
 
+    @include respond(s-device){
+        display: none;
+    }
+
     $arrow-pos-top: 38%;
 
     i{

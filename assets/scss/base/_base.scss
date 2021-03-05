@@ -36,9 +36,6 @@ li{
     //    max-width: 98.1rem;
     // }
 
-    // @include respond (mobile){
-    //    width: 644px;
-    // }
 }
 
 
@@ -62,6 +59,7 @@ li{
 
 .col-3-of-4{
     margin: 0rem 0 1rem 0;
+    overflow: hidden;
 
     @include respond(s-device){
         width: 100%;

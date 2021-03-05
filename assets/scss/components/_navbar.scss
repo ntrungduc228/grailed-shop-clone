@@ -181,10 +181,14 @@
     max-width: 32rem;
     background-color: $primary-color;
     z-index: calc(#{$zindex-fixed} + 2);
-    overflow: scroll;
+    overflow-y: scroll;
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s, opacity linear 0.2s;
+
+    @include respond(s-device){
+        overflow-y: scroll;
+    }
 
     &__list{
         padding-left: 0;

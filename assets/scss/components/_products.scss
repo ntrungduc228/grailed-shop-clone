@@ -26,15 +26,21 @@
         position: relative;
 
         @include respond(s-device){
-            display: none;
+            //display: none;
         }
 
         &__content{margin-bottom: 4rem;}
 
         &__inner{
             display: grid;
+            grid-auto-flow: column;
             grid-template-columns: repeat(4, 1fr);
+            // display: flex;
             gap: 0 2rem;
+            transition: all 0.4s ease;
+            &::-webkit-scrollbar{
+                display: none;
+            }
 
             @include respond(s-device){
                 display: flex;
@@ -124,6 +130,7 @@
             @include respond (mobile){
                 grid-template-columns: repeat(3, 1fr);
                 gap: 2rem 1.2rem;
+                margin: 0 0.2rem;
             }
 
             @include respond (s-mobile){
